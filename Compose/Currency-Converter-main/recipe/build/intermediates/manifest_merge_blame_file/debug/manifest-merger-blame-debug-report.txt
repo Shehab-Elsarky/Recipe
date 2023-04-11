@@ -1,0 +1,33 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.recipe" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="23"
+6-->D:\Android Studio Projects\Compose\Currency-Converter-main\recipe\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="31" />
+7-->D:\Android Studio Projects\Compose\Currency-Converter-main\recipe\src\main\AndroidManifest.xml
+8
+9    <application android:supportsRtl="true" >
+9-->D:\Android Studio Projects\Compose\Currency-Converter-main\recipe\src\main\AndroidManifest.xml:5:5-15:19
+9-->D:\Android Studio Projects\Compose\Currency-Converter-main\recipe\src\main\AndroidManifest.xml:5:18-44
+10        <activity
+10-->D:\Android Studio Projects\Compose\Currency-Converter-main\recipe\src\main\AndroidManifest.xml:6:9-14:20
+11            android:name="com.example.recipe.ui.activity.RecipeActivity"
+11-->D:\Android Studio Projects\Compose\Currency-Converter-main\recipe\src\main\AndroidManifest.xml:7:13-73
+12            android:exported="true" >
+12-->D:\Android Studio Projects\Compose\Currency-Converter-main\recipe\src\main\AndroidManifest.xml:8:13-36
+13            <intent-filter>
+13-->D:\Android Studio Projects\Compose\Currency-Converter-main\recipe\src\main\AndroidManifest.xml:9:13-13:29
+14                <action android:name="android.intent.action.MAIN" />
+14-->D:\Android Studio Projects\Compose\Currency-Converter-main\recipe\src\main\AndroidManifest.xml:10:17-69
+14-->D:\Android Studio Projects\Compose\Currency-Converter-main\recipe\src\main\AndroidManifest.xml:10:25-66
+15
+16                <category android:name="android.intent.category.LAUNCHER" />
+16-->D:\Android Studio Projects\Compose\Currency-Converter-main\recipe\src\main\AndroidManifest.xml:12:17-77
+16-->D:\Android Studio Projects\Compose\Currency-Converter-main\recipe\src\main\AndroidManifest.xml:12:27-74
+17            </intent-filter>
+18        </activity>
+19    </application>
+20
+21</manifest>

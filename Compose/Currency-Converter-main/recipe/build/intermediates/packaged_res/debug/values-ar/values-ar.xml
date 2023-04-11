@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="EGP">جنيه مصرى</string>
+    <string name="GBP">دينار</string>
+    <string name="JPY">ين يابانى</string>
+    <string name="SAR">ريال سعودى</string>
+    <string name="USD">دولار امريكى</string>
+    <string name="app_name">Emoney</string>
+    <string name="currency_converter">محول العملات</string>
+</resources>

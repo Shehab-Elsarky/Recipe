@@ -1,0 +1,66 @@
+com/examples/core/ui/dialog/BaseNetworkingDialog_Factory.java
+ com.examples.core.ui.dialog.BaseNetworkingDialog_Factory
+ com.examples.core.ui.dialog.BaseNetworkingDialog_Factory$InstanceHolder
+com/examples/core/ui/fragment/BaseUiHelper_Factory.java
+ com.examples.core.ui.fragment.BaseUiHelper_Factory
+ com.examples.core.ui.fragment.BaseUiHelper_Factory$InstanceHolder
+com/examples/core/ui/view_model/BaseViewModel_Factory.java
+ com.examples.core.ui.view_model.BaseViewModel_Factory
+ com.examples.core.ui.view_model.BaseViewModel_Factory$InstanceHolder
+com/examples/core/data/mapper/CloudErrorMapper_Factory.java
+ com.examples.core.data.mapper.CloudErrorMapper_Factory
+com/examples/core/ui/fragment/NetworkBaseFragment_MembersInjector.java
+ com.examples.core.ui.fragment.NetworkBaseFragment_MembersInjector
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+hilt_aggregated_deps/_com_examples_core_data_di_NetworkModule.java
+ hilt_aggregated_deps._com_examples_core_data_di_NetworkModule
+com/examples/core/data/di/NetworkModule_ProvidesRetrofitFactory.java
+ com.examples.core.data.di.NetworkModule_ProvidesRetrofitFactory
+com/examples/core/DataBinderMapperImpl.java
+ com.examples.core.DataBinderMapperImpl
+ com.examples.core.DataBinderMapperImpl$InnerBrLookup
+ com.examples.core.DataBinderMapperImpl$InnerLayoutIdLookup
+com/examples/core/ui/view_model/BaseViewModel_HiltModules.java
+ com.examples.core.ui.view_model.BaseViewModel_HiltModules
+ com.examples.core.ui.view_model.BaseViewModel_HiltModules$BindsModule
+ com.examples.core.ui.view_model.BaseViewModel_HiltModules$KeyModule
+com/examples/core/databinding/DialogLoadingBinding.java
+ com.examples.core.databinding.DialogLoadingBinding
+com/examples/core/ui/dialog/BaseDialogFragment_MembersInjector.java
+ com.examples.core.ui.dialog.BaseDialogFragment_MembersInjector
+com/examples/core/data/di/NetworkModule_ProvidesOkHttpClientFactory.java
+ com.examples.core.data.di.NetworkModule_ProvidesOkHttpClientFactory
+com/examples/core/BuildConfig.java
+ com.examples.core.BuildConfig
+com/examples/core/data/di/NetworkModule_ProvidesGsonFactory.java
+ com.examples.core.data.di.NetworkModule_ProvidesGsonFactory
+ com.examples.core.data.di.NetworkModule_ProvidesGsonFactory$InstanceHolder
+com/examples/core/databinding/DialogNetworkingErrorsBinding.java
+ com.examples.core.databinding.DialogNetworkingErrorsBinding
+com/examples/core/ui/dialog/BaseBottomSheetFragment_MembersInjector.java
+ com.examples.core.ui.dialog.BaseBottomSheetFragment_MembersInjector
+com/examples/core/BR.java
+ com.examples.core.BR
+com/examples/core/DataBindingTriggerClass.java
+ com.examples.core.DataBindingTriggerClass
+hilt_aggregated_deps/_com_examples_core_ui_view_model_BaseViewModel_HiltModules_BindsModule.java
+ hilt_aggregated_deps._com_examples_core_ui_view_model_BaseViewModel_HiltModules_BindsModule
+hilt_aggregated_deps/_com_examples_core_ui_view_model_BaseViewModel_HiltModules_KeyModule.java
+ hilt_aggregated_deps._com_examples_core_ui_view_model_BaseViewModel_HiltModules_KeyModule
+com/examples/core/databinding/ActivityBaseBinding.java
+ com.examples.core.databinding.ActivityBaseBinding
+com/examples/core/data/di/NetworkModule_LoggingInterceptorFactory.java
+ com.examples.core.data.di.NetworkModule_LoggingInterceptorFactory
+ com.examples.core.data.di.NetworkModule_LoggingInterceptorFactory$InstanceHolder
+com/examples/core/databinding/ActivityCommonBinding.java
+ com.examples.core.databinding.ActivityCommonBinding
+com/examples/core/data/di/NetworkModule_ProvidesGsonConverterFactoryFactory.java
+ com.examples.core.data.di.NetworkModule_ProvidesGsonConverterFactoryFactory
+com/examples/core/utils/EndlessRecyclerViewScrollListener.java
+ com.examples.core.utils.EndlessRecyclerViewScrollListener
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/examples/core/ui/view_model/BaseViewModel_HiltModules_KeyModule_ProvideFactory.java
+ com.examples.core.ui.view_model.BaseViewModel_HiltModules_KeyModule_ProvideFactory
+ com.examples.core.ui.view_model.BaseViewModel_HiltModules_KeyModule_ProvideFactory$InstanceHolder

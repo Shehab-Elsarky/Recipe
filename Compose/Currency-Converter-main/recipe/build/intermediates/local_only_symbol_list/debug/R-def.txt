@@ -1,0 +1,25 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable empty_plate
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id action_CurrencyListFragment_to_currencyConverterFragment
+id composeView
+id currencyConverterFragment
+id currencyListFragment
+id recipe_nav_graph
+layout fragment_recipe_details
+layout fragment_recipe_list
+mipmap ic_launcher
+mipmap ic_launcher_round
+navigation recipe_nav_graph
+string app_name
+string empty_state_img_desc
+style Theme.MaxABTask

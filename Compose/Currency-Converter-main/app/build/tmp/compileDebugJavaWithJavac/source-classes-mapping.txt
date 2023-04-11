@@ -1,0 +1,74 @@
+com/architecture/clean/DataBinderMapperImpl.java
+ com.architecture.clean.DataBinderMapperImpl
+ com.architecture.clean.DataBinderMapperImpl$InnerBrLookup
+ com.architecture.clean.DataBinderMapperImpl$InnerLayoutIdLookup
+dagger/hilt/internal/processedrootsentinel/codegen/_com_architecture_clean_core_App.java
+ dagger.hilt.internal.processedrootsentinel.codegen._com_architecture_clean_core_App
+com/architecture/clean/BuildConfig.java
+ com.architecture.clean.BuildConfig
+dagger/hilt/internal/aggregatedroot/codegen/_com_architecture_clean_core_App.java
+ dagger.hilt.internal.aggregatedroot.codegen._com_architecture_clean_core_App
+hilt_aggregated_deps/_com_architecture_clean_core_App_GeneratedInjector.java
+ hilt_aggregated_deps._com_architecture_clean_core_App_GeneratedInjector
+com/architecture/clean/DataBindingTriggerClass.java
+ com.architecture.clean.DataBindingTriggerClass
+com/example/recipe/BR.java
+ com.example.recipe.BR
+com/examples/core/BR.java
+ com.examples.core.BR
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/architecture/clean/core/App_GeneratedInjector.java
+ com.architecture.clean.core.App_GeneratedInjector
+com/architecture/clean/core/Hilt_App.java
+ com.architecture.clean.core.Hilt_App
+ com.architecture.clean.core.Hilt_App$1
+com/architecture/clean/BR.java
+ com.architecture.clean.BR
+com/architecture/clean/core/App_HiltComponents.java
+ com.architecture.clean.core.App_HiltComponents
+ com.architecture.clean.core.App_HiltComponents$ActivityC
+ com.architecture.clean.core.App_HiltComponents$ActivityC$Builder
+ com.architecture.clean.core.App_HiltComponents$ActivityCBuilderModule
+ com.architecture.clean.core.App_HiltComponents$ActivityRetainedC
+ com.architecture.clean.core.App_HiltComponents$ActivityRetainedC$Builder
+ com.architecture.clean.core.App_HiltComponents$ActivityRetainedCBuilderModule
+ com.architecture.clean.core.App_HiltComponents$FragmentC
+ com.architecture.clean.core.App_HiltComponents$FragmentC$Builder
+ com.architecture.clean.core.App_HiltComponents$FragmentCBuilderModule
+ com.architecture.clean.core.App_HiltComponents$ServiceC
+ com.architecture.clean.core.App_HiltComponents$ServiceC$Builder
+ com.architecture.clean.core.App_HiltComponents$ServiceCBuilderModule
+ com.architecture.clean.core.App_HiltComponents$SingletonC
+ com.architecture.clean.core.App_HiltComponents$ViewC
+ com.architecture.clean.core.App_HiltComponents$ViewC$Builder
+ com.architecture.clean.core.App_HiltComponents$ViewCBuilderModule
+ com.architecture.clean.core.App_HiltComponents$ViewModelC
+ com.architecture.clean.core.App_HiltComponents$ViewModelC$Builder
+ com.architecture.clean.core.App_HiltComponents$ViewModelCBuilderModule
+ com.architecture.clean.core.App_HiltComponents$ViewWithFragmentC
+ com.architecture.clean.core.App_HiltComponents$ViewWithFragmentC$Builder
+ com.architecture.clean.core.App_HiltComponents$ViewWithFragmentCBuilderModule
+com/architecture/clean/core/DaggerApp_HiltComponents_SingletonC.java
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$1
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCBuilder
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCBuilder
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl$FragmentCBuilder
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl$FragmentCI
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl$FragmentCI$ViewWithFragmentCBuilder
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl$FragmentCI$ViewWithFragmentCI
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl$ViewCBuilder
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ActivityCImpl$ViewCI
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCBuilder
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCImpl
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$ActivityRetainedCImpl$ViewModelCImpl$SwitchingProvider
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$Builder
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$ServiceCBuilder
+ com.architecture.clean.core.DaggerApp_HiltComponents_SingletonC$ServiceCImpl
