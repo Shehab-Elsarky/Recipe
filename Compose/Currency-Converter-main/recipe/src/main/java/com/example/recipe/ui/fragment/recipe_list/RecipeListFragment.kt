@@ -4,9 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
@@ -14,11 +16,11 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import com.example.recipe.BuildConfig
 import com.example.recipe.R
 import com.example.recipe.databinding.FragmentRecipeListBinding
 import com.example.recipe.domain.entity.recipe.query.SearchQuery
 import com.example.recipe.ui.dialog.ShowRowButtonAlertDialog
+import com.example.recipe.ui.resource.theme.AppTheme
 import com.examples.core.ui.fragment.BaseFragment
 import com.examples.core.ui.fragment.BaseUiHelper
 import dagger.hilt.android.AndroidEntryPoint
@@ -27,7 +29,7 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 /**
  * Created by Shehab Elsarky.
  */
-@OptIn(ExperimentalComposeUiApi::class)
+@ExperimentalComposeUiApi
 @ExperimentalCoroutinesApi
 @AndroidEntryPoint
 class RecipeListFragment :
@@ -45,11 +47,16 @@ class RecipeListFragment :
     ): View? {
         val view = super.onCreateView(inflater, container, savedInstanceState)
         view?.findViewById<ComposeView>(R.id.composeView)?.apply {
-
             setViewCompositionStrategy(
                 ViewCompositionStrategy.DisposeOnLifecycleDestroyed(viewLifecycleOwner)
             )
-            setContent { RecipeListScreen() }
+            setContent {
+                AppTheme(
+                    darkTheme = viewModel.isDark.value
+                ) {
+                    RecipeListScreen()
+                }
+            }
         }
         return view
         /* return ComposeView(requireContext()).apply {
@@ -80,9 +87,11 @@ class RecipeListFragment :
             modifier = Modifier
                 .fillMaxWidth()
                 .fillMaxHeight()
+                .background(color = MaterialTheme.colors.surface)
         ) {
             ShowRowButtonAlertDialog(viewModel)
             SearchView(viewModel)
+            DarkThemeSwitch(viewModel)
             FoodCategoryChipList(viewModel)
             RecipeList(viewModel, onClick = { onRecipeItemClicked() })
         }

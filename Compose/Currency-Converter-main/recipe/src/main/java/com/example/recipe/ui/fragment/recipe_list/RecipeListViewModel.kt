@@ -24,6 +24,13 @@ class RecipeListViewModel @Inject constructor(
     private val recipeListUseCase: RecipeListUseCase
 ) : BaseViewModel() {
 
+    // should be saved in data store
+    val isDark = mutableStateOf(false)
+
+    fun toggleLightTheme(){
+        isDark.value = !isDark.value
+    }
+
     val PAGE_SIZE = 30
 
     val page = mutableStateOf(1)

@@ -7,8 +7,6 @@ import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -58,7 +56,7 @@ fun ShowRowButtonAlertDialog(viewModel: RecipeListViewModel) {
             },
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(32.dp),
+                .padding(15.dp),
             shape = RoundedCornerShape(5.dp),
             backgroundColor = Color.White
         )

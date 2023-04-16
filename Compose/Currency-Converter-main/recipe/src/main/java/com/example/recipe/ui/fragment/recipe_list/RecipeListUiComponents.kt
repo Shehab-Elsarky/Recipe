@@ -3,7 +3,6 @@ package com.example.recipe.ui.fragment.recipe_list
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
@@ -12,7 +11,6 @@ import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.MutableState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
@@ -20,18 +18,18 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.VisualTransformation
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.recipe.R
 import com.example.recipe.domain.entity.recipe.local.Recipe
 import com.example.recipe.domain.entity.recipe.local.getAllFoodCategories
 import com.example.recipe.domain.entity.recipe.query.SearchQuery
+import com.example.recipe.ui.resource.color.Black
+import com.example.recipe.ui.resource.color.White
 import com.examples.core.utils.loadPicture
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 
@@ -54,7 +52,7 @@ fun SearchView(viewModel: RecipeListViewModel) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(8.dp)
-                    .background(Color.Transparent),
+                    .background(color = MaterialTheme.colors.surface),
 
                 enabled = true,
                 readOnly = false,
@@ -90,11 +88,44 @@ fun SearchView(viewModel: RecipeListViewModel) {
     }
 }
 
+@ExperimentalCoroutinesApi
+@Composable
+fun DarkThemeSwitch(viewModel: RecipeListViewModel) {
+    Row(
+        modifier = Modifier
+            .padding(10.dp)
+            .fillMaxWidth(),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Switch(
+            modifier = Modifier.wrapContentWidth(),
+            colors = SwitchDefaults.colors(
+                checkedThumbColor = if (viewModel.isDark.value) White else Black,
+                checkedTrackColor = if (viewModel.isDark.value) White else Black
+            ),
+            checked = viewModel.isDark.value,
+            onCheckedChange = {
+                viewModel.toggleLightTheme()
+            }
+        )
+        Text(
+            modifier = Modifier
+                .padding(5.dp)
+                .wrapContentWidth(),
+            text = "Dark Theme",
+            style = MaterialTheme.typography.h3,
+            color = if (viewModel.isDark.value) White else Black
+        )
+    }
+
+}
+
 @Composable
 fun FoodCategoryChip(
     category: String,
     onExecuteSearch: (String) -> Unit,
-){
+) {
     Surface(
         modifier = Modifier.padding(end = 8.dp),
         elevation = 8.dp,
@@ -122,14 +153,14 @@ fun FoodCategoryChip(
 @Composable
 fun FoodCategoryChipList(
     viewModel: RecipeListViewModel
-){
+) {
     val scrollState = rememberScrollState()
     Row(
         modifier = Modifier
             .padding(start = 8.dp, bottom = 8.dp)
             .horizontalScroll(scrollState)
     ) {
-        getAllFoodCategories().forEach(){
+        getAllFoodCategories().forEach() {
             FoodCategoryChip(
                 category = it.value,
                 onExecuteSearch = {
@@ -140,7 +171,6 @@ fun FoodCategoryChipList(
         }
     }
 }
-
 
 
 @ExperimentalCoroutinesApi
@@ -208,16 +238,17 @@ fun RecipeList(
     onClick: () -> Unit
 ) {
     val recipeList = viewModel.recipes.value
-    LazyColumn(modifier = Modifier
-        .fillMaxHeight()
-        .fillMaxWidth()
-        .padding(10.dp)
+    LazyColumn(
+        modifier = Modifier
+            .fillMaxHeight()
+            .fillMaxWidth()
+            .padding(10.dp)
     ) {
         itemsIndexed(
             items = recipeList, itemContent =
             { index, recipe ->
                 viewModel.onChangeRecipeScrollPosition(index)
-                if((index + 1) >= (viewModel.page.value * viewModel.PAGE_SIZE)){
+                if ((index + 1) >= (viewModel.page.value * viewModel.PAGE_SIZE)) {
                     viewModel.nextPage()
                 }
                 RecipeCard(recipe = recipe, onClick = { onClick.invoke() })
